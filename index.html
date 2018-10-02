@@ -1,86 +1,106 @@
 <!DOCTYPE html><html><head>
     <script src="p5.min.js"></script>
     <script src="p5.dom.min.js"></script>
+    <script src="//www.youtube.com/player_api"></script>
     <script src="p5.sound.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
-    <script src="sketch.js"></script>
 
-<img src="brain.png">
+    <div class="buttons">HELLO </div>
+
+    <script>
+
+    window.addEventListener('load', playVideo())
+
+      function playVideo() {
+
+        var htmlString = '';
+
+        for(var i = 1; i < 34; i++) {
+          htmlString += `<button onclick=player${i}.playVideo()>?</button>`;
+        }
+
+        document.querySelector('.buttons').innerHTML = htmlString;
+      }
+
+    </script>
+
+<img src="brain.png" alt="brain">
 
 <div class="totalWrap">
 
 <div class="frontalContainer">
 <div class="rowFrontal">
-<iframe class="Frontal" src="https://www.youtube.com/embed/9Jr9n-QNClc?controls=0&mute=1&autoplay=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-<iframe class="Frontal" src="https://www.youtube.com/embed/9Jr9n-QNClc?controls=0&mute=1&autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-<iframe class="Frontal" src="https://www.youtube.com/embed/9Jr9n-QNClc?controls=0&mute=1&autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  <iframe class="Frontal" src="https://www.youtube.com/embed/9Jr9n-QNClc?enablejsapi=1" frameborder="0" allowfullscreen onload="player1=new YT.Player(this)"></iframe>
+  <iframe class="Frontal" src="https://www.youtube.com/embed/ix8TIUpVQfo?enablejsapi=1" frameborder="0" allowfullscreen onload="player2=new YT.Player(this)"></iframe>
+  <iframe class="Frontal" src="https://www.youtube.com/embed/9Jr9n-QNClc?enablejsapi=1" frameborder="0" allowfullscreen onload="player3=new YT.Player(this)"></iframe>
 </div>
 <div class="rowFrontal">
-<iframe class="Frontal" src="https://www.youtube.com/embed/9Jr9n-QNClc?controls=0&mute=1&autoplay=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-<iframe class="Frontal" src="https://www.youtube.com/embed/9Jr9n-QNClc?controls=0&mute=1&autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-<iframe class="Frontal" src="https://www.youtube.com/embed/9Jr9n-QNClc?controls=0&mute=1&autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  <iframe class="Frontal" src="https://www.youtube.com/embed/UOCoyImHnf4?enablejsapi=1" frameborder="0" allowfullscreen onload="player4=new YT.Player(this)"></iframe>
+  <iframe class="Frontal" src="https://www.youtube.com/embed/ix8TIUpVQfo?enablejsapi=1" frameborder="0" allowfullscreen onload="player5=new YT.Player(this)"></iframe>
+  <iframe class="Frontal" src="https://www.youtube.com/embed/ix8TIUpVQfo?enablejsapi=1" frameborder="0" allowfullscreen onload="player6=new YT.Player(this)"></iframe>
 </div>
 <div class="rowFrontal">
-<iframe class="Frontal" src="https://www.youtube.com/embed/9Jr9n-QNClc?controls=0&mute=1&autoplay=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-<iframe class="Frontal" src="https://www.youtube.com/embed/9Jr9n-QNClc?controls=0&mute=1&autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-<iframe class="Frontal" src="https://www.youtube.com/embed/9Jr9n-QNClc?controls=0&mute=1&autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  <iframe class="Frontal" src="https://www.youtube.com/embed/UOCoyImHnf4?enablejsapi=1" frameborder="0" allowfullscreen onload="player7=new YT.Player(this)"></iframe>
+  <iframe class="Frontal" src="https://www.youtube.com/embed/Bku0XHmzdlc?enablejsapi=1" frameborder="0" allowfullscreen onload="player8=new YT.Player(this)"></iframe>
+  <iframe class="Frontal" src="https://www.youtube.com/embed/9Jr9n-QNClc?enablejsapi=1" frameborder="0" allowfullscreen onload="player9=new YT.Player(this)"></iframe>
 </div>
 <div class="rowFrontal">
-<iframe class="Frontal" src="https://www.youtube.com/embed/9Jr9n-QNClc?controls=0&mute=1&autoplay=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-<iframe class="Frontal" src="https://www.youtube.com/embed/9Jr9n-QNClc?controls=0&mute=1&autoplay=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-<iframe class="Frontal" src="https://www.youtube.com/embed/9Jr9n-QNClc?controls=0&mute=1&autoplay=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe class="Frontal" src="https://www.youtube.com/embed/9Jr9n-QNClc?enablejsapi=1" frameborder="0" allowfullscreen onload="player10=new YT.Player(this)"></iframe>
+<iframe class="Frontal" src="https://www.youtube.com/embed/9Jr9n-QNClc?enablejsapi=1" frameborder="0" allowfullscreen onload="player11=new YT.Player(this)"></iframe>
+<iframe class="Frontal" src="https://www.youtube.com/embed/Bku0XHmzdlc?enablejsapi=1" frameborder="0" allowfullscreen onload="player12=new YT.Player(this)"></iframe>
 </div>
 </div>
 
 <div class="motorContainer">
   <div class="rowMotor">
-<iframe class="motorcortex" src="https://www.youtube.com/embed/5uci_uV_QU8?controls=0&mute=1&autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-<iframe class="motorcortex" src="https://www.youtube.com/embed/bKOTKHtbM54?controls=0&mute=1&autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-<iframe class="motorcortex" src="https://www.youtube.com/embed/AnsBxRCRzYY?controls=0&mute=1&autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-<iframe class="motorcortex" src="https://www.youtube.com/embed/5uci_uV_QU8?controls=0&mute=1&autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe class="motorcortex" src="https://www.youtube.com/embed/5uci_uV_QU8?enablejsapi=1" frameborder="0" allowfullscreen onload="player13=new YT.Player(this)"></iframe>
+<iframe class="motorcortex" src="https://www.youtube.com/embed/bKOTKHtbM54?enablejsapi=1" frameborder="0" allowfullscreen onload="player14=new YT.Player(this)"></iframe>
+<iframe class="motorcortex" src="https://www.youtube.com/embed/AnsBxRCRzYY?enablejsapi=1" frameborder="0" allowfullscreen onload="player15=new YT.Player(this)"></iframe>
+<iframe class="motorcortex" src="https://www.youtube.com/embed/5uci_uV_QU8?enablejsapi=1" frameborder="0" allowfullscreen onload="player16=new YT.Player(this)"></iframe>
 </div>
 <div class="rowMotor">
-<iframe class="motorcortex" src="https://www.youtube.com/embed/bKOTKHtbM54?controls=0&mute=1&autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-<iframe class="motorcortex" src="https://www.youtube.com/embed/rmWyQ_tbLBE?controls=0&mute=1&autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-<iframe class="motorcortex" src="https://www.youtube.com/embed/mTM31eOYWR8?controls=0&mute=1&autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-<iframe class="motorcortex" src="https://www.youtube.com/embed/rmWyQ_tbLBE?controls=0&mute=1&autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe class="motorcortex" src="https://www.youtube.com/embed/bKOTKHtbM54?enablejsapi=1" frameborder="0" allowfullscreen onload="player17=new YT.Player(this)"></iframe>
+<iframe class="motorcortex" src="https://www.youtube.com/embed/rmWyQ_tbLBE?enablejsapi=1" frameborder="0" allowfullscreen onload="player18=new YT.Player(this)"></iframe>
+<iframe class="motorcortex" src="https://www.youtube.com/embed/mTM31eOYWR8?enablejsapi=1" frameborder="0" allowfullscreen onload="player19=new YT.Player(this)"></iframe>
+<iframe class="motorcortex" src="https://www.youtube.com/embed/rmWyQ_tbLBE?enablejsapi=1" frameborder="0" allowfullscreen onload="player20=new YT.Player(this)"></iframe>
 </div>
 <div class="rowMotor">
-<iframe class="motorcortex" src="https://www.youtube.com/embed/pgyXSnSj00U?controls=0&mute=1&autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-<iframe class="motorcortex" src="https://www.youtube.com/embed/DRIkqoOxBeY?controls=0&mute=0&autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-<iframe class="motorcortex" src="https://www.youtube.com/embed/QTPb-8LnnzI?controls=0&mute=1&autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-<iframe class="motorcortex" src="https://www.youtube.com/embed/AnsBxRCRzYY?controls=0&mute=1&autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe class="motorcortex" src="https://www.youtube.com/embed/pgyXSnSj00U?enablejsapi=1" frameborder="0" allowfullscreen onload="player21=new YT.Player(this)"></iframe>
+<iframe class="motorcortex" src="https://www.youtube.com/embed/DRIkqoOxBeY?enablejsapi=1" frameborder="0" allowfullscreen onload="player22=new YT.Player(this)"></iframe>
+<iframe class="motorcortex" src="https://www.youtube.com/embed/QTPb-8LnnzI?enablejsapi=1" frameborder="0" allowfullscreen onload="player23=new YT.Player(this)"></iframe>
+<iframe class="motorcortex" src="https://www.youtube.com/embed/AnsBxRCRzYY?enablejsapi=1" frameborder="0" allowfullscreen onload="player24=new YT.Player(this)"></iframe>
 </div>
 <div class="rowMotor">
-<iframe class="motorcortex" src="https://www.youtube.com/embed/sK_r5c2ssxE?controls=0&mute=1&autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-<iframe class="motorcortex" src="https://www.youtube.com/embed/2wE1Kmr8Ce0?controls=0&mute=1&autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-<iframe class="motorcortex" src="https://www.youtube.com/embed/afEtVVGcDoo?controls=0&mute=0&autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-<iframe class="motorcortex" src="https://www.youtube.com/embed/sK_r5c2ssxE?controls=0&mute=1&autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe class="motorcortex" src="https://www.youtube.com/embed/sK_r5c2ssxE?enablejsapi=1" frameborder="0" allowfullscreen onload="player25=new YT.Player(this)"></iframe>
+<iframe class="motorcortex" src="https://www.youtube.com/embed/2wE1Kmr8Ce0?enablejsapi=1" frameborder="0" allowfullscreen onload="player26=new YT.Player(this)"></iframe>
+<iframe class="motorcortex" src="https://www.youtube.com/embed/afEtVVGcDoo?enablejsapi=1" frameborder="0" allowfullscreen onload="player27=new YT.Player(this)"></iframe>
+<iframe class="motorcortex" src="https://www.youtube.com/embed/sK_r5c2ssxE?enablejsapi=1" frameborder="0" allowfullscreen onload="player28=new YT.Player(this)"></iframe>
 </div>
 <div class="temporalContainer">
   <div class="temporalRow">
-  <iframe class="motorcortex" src="https://www.youtube.com/embed/4DAbnHv6VHs?controls=0&mute=1&autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-  <iframe class="motorcortex" src="https://www.youtube.com/embed/0STwSamdUyA?controls=0&mute=0&autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-  <iframe class="motorcortex" src="https://www.youtube.com/embed/URSH0QpxKo8?controls=0&mute=1&autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-  <iframe class="motorcortex" src="https://www.youtube.com/embed/4DAbnHv6VHs?controls=0&mute=1&autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  <iframe class="motorcortex" src="https://www.youtube.com/embed/4DAbnHv6VHs?enablejsapi=1" frameborder="0" allowfullscreen onload="player29=new YT.Player(this)"></iframe>
+  <iframe class="motorcortex" src="https://www.youtube.com/embed/0STwSamdUyA?enablejsapi=1" frameborder="0" allowfullscreen onload="player30=new YT.Player(this)"></iframe>
+  <iframe class="motorcortex" src="https://www.youtube.com/embed/URSH0QpxKo8?enablejsapi=1" frameborder="0" allowfullscreen onload="player31=new YT.Player(this)"></iframe>
+  <iframe class="motorcortex" src="https://www.youtube.com/embed/4DAbnHv6VHs?enablejsapi=1" frameborder="0" allowfullscreen onload="player32=new YT.Player(this)"></iframe>
   </div>
 </div>
 <div class="cerebellum">
   <div class="cerebellumRow">
-  <iframe class="cerebellumVid" src="https://www.youtube.com/embed/HR9nrSe5pF4?controls=0&mute=1&autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-  <iframe class="cerebellumVid" src="https://www.youtube.com/embed/9Jr9n-QNClc?controls=0&mute=0&autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  <iframe class="cerebellumVid" src="https://www.youtube.com/embed/HR9nrSe5pF4?enablejsapi=1" frameborder="0" allowfullscreen onload="player33=new YT.Player(this)"></iframe>
+  <iframe class="cerebellumVid" src="https://www.youtube.com/embed/9Jr9n-QNClc?enablejsapi=1" frameborder="0" allowfullscreen onload="player34=new YT.Player(this)"></iframe>
 </div>
 </div>
 </div>
 <div class="visualContainer">
   <div class="visualRow">
-    <iframe class="visualVid" src="https://www.youtube.com/embed/TU4kot-fMTA?controls=0&mute=1&autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    <iframe class="visualVid" src="https://www.youtube.com/embed/YXKUP5fUc9Q?controls=0&mute=0&autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-      <iframe class="visualVid" src="https://www.youtube.com/embed/ngjqOCn9gy0?controls=0&mute=1&autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <iframe class="visualVid" src="https://www.youtube.com/embed/TU4kot-fMTA?enablejsapi=1" frameborder="0" allowfullscreen onload="player1=new YT.Player(this)"></iframe>
+    <iframe class="visualVid" src="https://www.youtube.com/embed/YXKUP5fUc9Q?enablejsapi=1" frameborder="0" allowfullscreen onload="player1=new YT.Player(this)"></iframe>
+    <iframe class="visualVid" src="https://www.youtube.com/embed/ngjqOCn9gy0?enablejsapi=1" frameborder="0" allowfullscreen onload="player1=new YT.Player(this)"></iframe>
   </div>
 </div>
 </div>
+
 
 </body></html>

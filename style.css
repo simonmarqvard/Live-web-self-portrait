@@ -12,6 +12,13 @@ img {
 
 }
 
+#sound {
+  background-color: red
+}
+
+button {
+  margin-left: 15px;
+}
 
 .totalWrap {
 /* background-color: blue; */
@@ -22,7 +29,7 @@ flex-direction: row;
 }
 
 .motorContainer {
-  /* background-color: red; */
+  background-color: yellow;
   margin-left: 0px;
   margin-top: 75px;
   width: 400px;
@@ -46,7 +53,7 @@ flex-direction: row;
 }
 
 .frontalContainer {
-  /* background-color: green; */
+  background-color: lightblue;
   margin-top: 150px;
   margin-left: 325px;
   margin-right: 0px;
@@ -68,7 +75,7 @@ flex-direction: row;
 }
 
 .temporalContainer {
-  /* background-color: purple; */
+  background-color: green;
   flex-shrink: 0;
 }
 
@@ -78,7 +85,7 @@ flex-direction: row;
 }
 
 .visualContainer {
-  /* background-color: yellow; */
+  background-color: pink;
   margin-top: 140px;
   width: 145px;
   height: 425px;
@@ -86,7 +93,7 @@ flex-direction: row;
 }
 
 .cerebellum {
-  /* background-color: pink; */
+  background-color: green;
   height: 100px;
   flex-shrink: 0;
 }
